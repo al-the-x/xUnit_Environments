@@ -1,0 +1,18 @@
+A Driver can get in a Car so that he can go somewhere.
+ * Driver has to open the door to get in
+ * Driver has to unlock a locked door before he can open it.
+
+A Driver can lock and unlock the doors so that no one can steal his car.
+ * Needs a key.
+
+A Passenger can get into a Car so that he can go somewhere with the Driver.
+ * Passengers have to open the door to enter.
+ * Passengers can't open the doors if they're locked.
+ * Up to X Passengers can ride in the Car safely.
+
+A Driver can turn on a Car so that he can go somewhere.
+ * Until he turns it on, a Car can't go anywhere
+ * Driver needs a key to turn the Car on.
+
+ A Driver can drive a Car so that he can get somewhere.
+ 
