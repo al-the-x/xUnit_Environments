@@ -1,0 +1,26 @@
+Stories
+
+* A Client can send a Message to a Server so that he can talk to other Clients.
+* A Client can receive a Message from a Server so that he can read the conversation.
+* A Client can tell what Clients are connected to a Server so that he can see who he's talking to.
+
+
+Client
+
+* identifier
+* addr/port/socket/etc
+* send(message)
+* connect(server)
+* disconnect(server)
+* ignore(client)
+* receive(message)
+* getServer() = server
+
+Server
+
+* clients = []
+* send(message)
+* receive(message)
+* connect(client)
+* disconnect(client)
+
