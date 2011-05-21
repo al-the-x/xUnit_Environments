@@ -4,6 +4,7 @@ watch(/(\w+)\/(?:main|test)\.(js|py|php)$/) do |matches|
   command = {
       'php' => 'phpunit',
       'python' => 'python',
+      'javascript' => 'js',
   }[type]
   
   test = "#{type}/test.#{ext}"
