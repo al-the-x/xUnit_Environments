@@ -9,7 +9,7 @@ module.exports = function(grunt) {
         command: 'node ./javascript/test.js'
       },
       test_py: {
-        command: 'python -m ./python/test.py'
+        command: 'python ./python/test.py'
       },
       test_php: {
         command: 'phpunit ./php/test.php'
@@ -21,9 +21,6 @@ module.exports = function(grunt) {
         stdout: true,
         failOnError: true
       }
-    },
-    nodeunit: {
-      files: ['test/**/*_test.js']
     },
     watch: {
       javascript: {
@@ -51,5 +48,4 @@ module.exports = function(grunt) {
 
   // Default task.
   grunt.registerTask('default', 'watch');
-
 };
