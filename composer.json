@@ -1,0 +1,14 @@
+{
+    "name": "al-the-x/x-unit_environments",
+    "require": {
+        "phpunit/phpunit": "*"
+    },
+    "license": "BSD-2-Clause",
+    "authors": [
+        {
+            "name": "David Rogers",
+            "email": "david@orlandophp.org"
+        }
+    ],
+    "minimum-stability": "dev"
+}
