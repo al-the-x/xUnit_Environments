@@ -1,49 +1,21 @@
-(function(){ // closure
-    load('main.js', 'jsunity.js');
+var print = console.log,
+    assert = require('assert'),
+    MiniUnit = require('mini-unit'),
+    main = require('./main.js'),
 
-    jsUnity.log = print;
+    test = new MiniUnit.TestCase();
 
-    /**
-     * Attaches the following assertion methods to
-     * the global scope for convenience.
-     *  - assertException
-     *  - assertTrue
-     *  - assertFalse
-     *  - assertIdentical
-     *  - assertNotIdentical
-     *  - assertEqual
-     *  - assertNotEqual
-     *  - assertMatch
-     *  - assertNotMatch
-     *  - assertTypeOf
-     *  - assertNotTypeOf
-     *  - assertInstanceOf
-     *  - assertNotInstanceOf
-     *  - assertNull
-     *  - assertNotNull
-     *  - assertUndefined
-     *  - assertNotUndefined
-     *  - assertNaN
-     *  - assertNotNaN
-     *  - fail
-     */
-    jsUnity.attachAssertions()
-})();
+test.setup = function(){
+    // Before every test...
+};
 
-jsUnity.run(function SomeTest ( )
-{
-    function setUp ( )
-    {
-        print('setting up');
-    }
+test.teardown = function(){
+    // After every test...
+};
 
-    function tearDown ( )
-    {
-        print('tearing down');
-    }
+test.testSomething = function(){
+    assert(false == true);
+};
 
-    function test_something ( )
-    {
-        assertFalse(true);
-    }
-}); // END jsUnity.run
+
+MiniUnit.run(test);
